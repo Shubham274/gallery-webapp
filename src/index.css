@@ -143,7 +143,7 @@ img {
   margin-bottom: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.25rem;
-  color: #476a2e;
+  color: hsl(243, 100%, 68%);
 }
 .form-control input {
   width: 100%;
@@ -168,7 +168,7 @@ img {
   padding: 1rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 h1,
@@ -251,4 +251,24 @@ h4 {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+  .backdrop_img {
+    width: 40%;
+  }
+  .photo-info {
+    width: 40%;
+    left: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .backdrop_img {
+    width: 65%;
+  }
+  .photo-info {
+    width: 66%;
+    left: 17%;
+  }
 }
